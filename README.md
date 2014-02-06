@@ -97,7 +97,7 @@ student will get the question correct.  The red dotted lines are log-odds
 iso-contours starting at a log-odds ratio of 0 on the 45 degree line and going
 up in increments of $\frac{1}{2}$ toward the northwest corner.
 
-![](<https://raw.github.com/raibread/knewton-ml-challenge/master/figures/logOddsContour.pdf>)
+![](https://raw.github.com/raibread/knewton-ml-challenge/master/figures/logOddsContour.pdf)
 
 The data exhibits a pretty nice pattern with most questions falling between the
 1.5 and 2.5 log-odds ratio contours.  The striking feature of this chart is the
@@ -106,7 +106,7 @@ some below zero!).  You can see this even more clearly by rank ordering the
 log-odds ratio for each question and noticing the dramatic drop off at the left
 tail (see below).
 
-![](<https://raw.github.com/raibread/knewton-ml-challenge/master/figures/logOdds.pdf>)
+![](https://raw.github.com/raibread/knewton-ml-challenge/master/figures/logOdds.pdf)
 
 If I was the professor of this year's class and I had very little time to figure
 out which questions to eliminate I might use the log-odds ratio heuristic and
@@ -223,7 +223,7 @@ to our inclusion cut-off of 1, we know which questions we will eliminate well
 before the 110th iteration.  You can see this in the plot below which show the
 parameter evolution of 50 random $\delta_i$ over the first 50 iterations.
 
-![](<https://raw.github.com/raibread/knewton-ml-challenge/master/figures/deltas_evol.pdf>)
+![](https://raw.github.com/raibread/knewton-ml-challenge/master/figures/deltas_evol.pdf)
 
 A look at the histogram of estimated $\delta_i$ show that many of the
 $\delta_i<1$ present themselves as outliers with respect to the rest of the
@@ -231,14 +231,14 @@ distribution which suggests that our criterion for inclusion isn't unreasonable.
 The only thing that we need to check is that our cutoff criterion doesn't shrink
 our question bank to less than $\frac{1}{2}$ its original size (it doesn't).
 
-![](<https://raw.github.com/raibread/knewton-ml-challenge/master/figures/deltas_hist.pdf>)
+![](https://raw.github.com/raibread/knewton-ml-challenge/master/figures/deltas_hist.pdf)
 
 Plotting the rank-ordered $\delta_i$ gives rise to a figure that is similar to
 the rank-ordering we saw in our initial exploratory analysis where the questions
 tail off dramatically in there ability to discern the ability of a student at a
 certain point.
 
-![](<https://raw.github.com/raibread/knewton-ml-challenge/master/figures/deltas_rankOrder.pdf>)
+![](https://raw.github.com/raibread/knewton-ml-challenge/master/figures/deltas_rankOrder.pdf)
 
 Notice in the rank-ordering though, that the majority of $\delta_i$ span a
 narrow range of values.  We don't extract a posterior measure of variance for
@@ -260,7 +260,7 @@ with the questions that our ECM determined as having $\delta_i<1$ marked with
 yellow dots.  Our algorithm appears to eliminate the questions that reside in
 the lower log-odds contour areas which is what we had expected.
 
-![](<https://raw.github.com/raibread/knewton-ml-challenge/master/figures/logOddsContour_post.pdf>)
+![](https://raw.github.com/raibread/knewton-ml-challenge/master/figures/logOddsContour_post.pdf)
 
 This is intuitively satisfying but makes one wonder if our heuristic approach
 would have been enough?  My guess would be that the answer is no.  There's a lot
