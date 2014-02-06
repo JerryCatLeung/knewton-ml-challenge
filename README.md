@@ -238,7 +238,7 @@ the rank-ordering we saw in our initial exploratory analysis where the questions
 tail off dramatically in there ability to discern the ability of a student at a
 certain point.
 
-![](https://raw.github.com/raibread/knewton-ml-challenge/master/figures/deltas_rankOrder.pdf)
+![a](https://raw.github.com/raibread/knewton-ml-challenge/master/figures/deltas_rankOrder.pdf)
 
 Notice in the rank-ordering though, that the majority of $\delta_i$ span a
 narrow range of values.  We don't extract a posterior measure of variance for
