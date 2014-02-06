@@ -3,7 +3,7 @@ Knewton ML Challenge
 
 ### Solution
 
-You can find the solution write-up to this Knewton data science recruiting challenge at `writeup/solution.pdf`. Below is the statement of the problem from the Knewton data science team.
+You can find the solution write-up to this Knewton data science recruiting challenge at [`writeup/solution.pdf`](https://github.com/raibread/knewton-ml-challenge/raw/master/writeup/solution.pdf). Below is the statement of the problem from the Knewton data science team.
 
 ### Problem Statement
 
